@@ -1,0 +1,12 @@
+[package]
+name = "dotdev"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+markdown = "1.0.0-alpha.18"
+axum = { version = "0.7", optional = true }
+tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
+thiserror = "1"
+tracing = { version = "0.1", optional = true }
